@@ -23,6 +23,7 @@ if isset(modify)
 //$avg = total/count(array)
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,7 +34,7 @@ if isset(modify)
 </head>
 
 <body>
-
+    <h1>Ejercicio 1 Sesiones</h1>
 </body>
 
 </html>
