@@ -1,3 +1,6 @@
+<?php
+// Start the session
+session_start();
 // ary10,20,30
 
 // to process the form
@@ -7,7 +10,7 @@
 // detect button (modify or average)
 
 // modify logic
-if isset(modify)
+//if isset(modify)
 // get form data
 //$number = POST["value"]
 //$position = POST["position"]
@@ -20,9 +23,11 @@ if isset(modify)
 // for array
 // total += pos
 
+
 //$avg = total/count(array)
 
 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,10 +36,28 @@ if isset(modify)
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 1</title>
+
 </head>
 
 <body>
-    <h1>Ejercicio 1 Sesiones</h1>
+    <h1>Ejercicio 1 - Modificar arrays</h1>
+    <form method="post" enctype="multipart/form-data">
+        Posicion a Modificar:
+        <select name="extension">
+            <option value="">--Selecciona--</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+
+        </select>
+        <br><br>
+        Nuevo Valor: <input type="number" name="tamano" min="1"><br><br>
+        <input type="submit" value="MODIFY">
+        <input type="submit" value="AVERAGE">
+        <input type="submit" value="RESET">
+    </form>
+
+
 </body>
 
 </html>
