@@ -1,84 +1,79 @@
-.
+# 📄 README – Práctica Sesiones en PHP
 
-📄 README – Práctica Sesiones en PHP
-🧩 Práctica 4 – Sesiones en PHP
-Ignacio Breñas Muñoz
-1º DAW – STUCOM
-https://github.com/Ignaciobrenas/Ejercicios_SESIONES_PHP
+## 🧩 Práctica 4 – Sesiones en PHP  
+Ignacio Breñas Muñoz  
+1º DAW – STUCOM  
 
-📌 Descripción de la práctica
+En esta práctica he desarrollado los ejercicios propuestos para trabajar el uso de **sesiones en PHP**, utilizando `$_SESSION` para mantener información entre peticiones y simular estados persistentes en aplicaciones web.
 
-En esta práctica he trabajado el uso de sesiones en PHP para mantener información entre peticiones y simular estados persistentes en aplicaciones web. La práctica consta de tres ejercicios, todos implementados en archivos independientes y comentados para explicar el funcionamiento y las decisiones tomadas.
+Todos los ejercicios están **comentados** para explicar las decisiones tomadas y el funcionamiento del código.
 
-El objetivo principal es aprender a utilizar $_SESSION para gestionar datos que deben mantenerse aunque la página se recargue.
+---
 
-🧩 Ejercicio 1 – Modificación de arrays con sesiones
+## 🔢 Ejercicio 1 – Modificación de arrays con sesiones
 
-Archivo: Ejercicio1.php
+Archivo: `Ejercicio1.php`
 
-En este ejercicio se trabaja con un array numérico almacenado en sesión.
+En este ejercicio se trabaja con un **array numérico almacenado en sesión**.
 
-Funcionalidades implementadas:
+Funcionalidades desarrolladas:
 
-Creación de un array inicial con tres valores numéricos.
+1. Creación de un **array inicial** con tres valores numéricos.
+2. Formulario para **modificar el valor** de una posición concreta del array.
+3. Uso de **sesiones** para que las modificaciones se mantengan entre recargas.
+4. Botón para calcular la **media** de los valores del array.
+5. Botón **Reset** que restaura el array a su estado inicial.
 
-Formulario para modificar el valor de una posición concreta del array.
+---
 
-Persistencia de las modificaciones mediante sesiones.
+## 🏪 Ejercicio 2 – Gestión de inventario compartido
 
-Botón para calcular la media de los valores del array.
+Archivo: `Ejercicio2.php`
 
-Botón Reset que restaura el array a su estado inicial.
-
-Este ejercicio demuestra el uso básico de sesiones para mantener cambios en estructuras de datos simples.
-
-🏪 Ejercicio 2 – Gestión de inventario compartido
-
-Archivo: Ejercicio2.php
-
-Este ejercicio simula la gestión de un inventario de supermercado utilizando sesiones.
+En este ejercicio se simula la gestión de un **inventario de supermercado** usando sesiones.
 
 Funcionalidades implementadas:
 
-Almacenamiento del nombre del trabajador que utiliza la aplicación.
+1. Almacenamiento del **nombre del trabajador** que utiliza la aplicación.
+2. Inventario **compartido por todos los trabajadores** mediante sesiones.
+3. Posibilidad de **añadir y quitar unidades** de productos (leche o refresco).
+4. Control de errores para evitar quitar más unidades de las disponibles.
+5. Mensaje de error en caso de stock insuficiente.
+6. Botón **Reset** que limpia únicamente el formulario.
 
-Inventario compartido entre todos los trabajadores.
+---
 
-Posibilidad de añadir y quitar unidades de leche o refresco mediante un formulario.
+## 🔧 Ejercicio 3 – Resolución de issues con sesiones
 
-Control para evitar quitar más unidades de las disponibles, mostrando un mensaje de error.
+Archivo: `Ejercicio3.php`
 
-Botón Reset que limpia únicamente el formulario, sin borrar el inventario ni el trabajador.
+En este ejercicio se trabaja a partir de un **repositorio base** proporcionado para resolver problemas relacionados con el uso de sesiones.
 
-🔧 Ejercicio 3 – Resolución de issues con sesiones
+Trabajo realizado:
 
-Archivo: Ejercicio3.php
+1. Análisis del código existente.
+2. Corrección de errores en el uso de variables de sesión.
+3. Mejora de la lógica y del flujo de la aplicación.
+4. Aplicación de buenas prácticas en el manejo de `$_SESSION`.
 
-En este ejercicio se trabaja a partir de un repositorio proporcionado para resolver problemas relacionados con sesiones.
+Repositorio base utilizado:  
+https://github.com/Stucom-Pelai/MP0487_RA4_Session_Shop
 
-Se ha realizado:
+---
 
-Análisis del código base.
+## 🆚 Resumen general
 
-Corrección de errores en el uso de sesiones.
+- Uso correcto de `session_start()`.
+- Persistencia de datos entre recargas de página.
+- Gestión de formularios con múltiples acciones.
+- Control de errores y estados de la aplicación.
+- Aplicación práctica de sesiones en escenarios reales.
 
-Mejora de la lógica y del flujo de la aplicación.
+---
 
-Aplicación de buenas prácticas en el manejo de $_SESSION.
+## 📂 Archivos de la entrega
 
-Repositorio base utilizado:
-https://github.com/Ignaciobrenas/Ejercicios_SESIONES_PHP
-
-📂 Archivos de la entrega
-
-Ejercicio1.php – Modificación de arrays usando sesiones.
-
-Ejercicio2.php – Gestión de inventario compartido con control de errores.
-
-Ejercicio3.php – Resolución de issues del repositorio.
-
-README.md – Este documento.
-
-✅ Conclusión
-
-Con esta práctica he consolidado el uso de sesiones en PHP, aprendiendo a mantener información entre peticiones HTTP y a gestionar estados persistentes en aplicaciones web reales. Los ejercicios permiten aplicar estos conceptos de forma práctica y progresiva.
+- `Ejercicio1.php` – Modificación de arrays usando sesiones.  
+- `Ejercicio2.php` – Gestión de inventario compartido con control de errores.  
+- `Ejercicio3.php` – Resolución de issues del repositorio.  
+- `README.md` – Este documento.
